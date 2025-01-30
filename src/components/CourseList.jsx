@@ -3,11 +3,6 @@ import { motion } from "framer-motion";
 import { Globe, MapPin, Crown, CheckCircle } from "lucide-react";
 
 export default function CourseTypes() {
-  const cardVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-  };
-
   const textVariants = {
     hidden: { opacity: 0, y: -10 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
@@ -71,8 +66,7 @@ export default function CourseTypes() {
 
   return (
     <motion.section
-      className="py-12 bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100 w-full flex justify-center
-      "
+      className="py-12 bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100 w-full flex justify-center"
       initial="hidden"
       animate="visible"
     >
@@ -92,13 +86,9 @@ export default function CourseTypes() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {courses.map((course, index) => (
-            <motion.div
+            <div
               key={index}
               className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 flex flex-col"
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
             >
               <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-5">
                 <div className="flex items-center gap-2 mb-3">
@@ -139,7 +129,7 @@ export default function CourseTypes() {
                   Kursga Yozilish
                 </motion.a>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
