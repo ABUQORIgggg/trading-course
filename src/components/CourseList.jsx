@@ -101,7 +101,6 @@ export default function CourseTypes() {
                 <div className="flex items-baseline gap-2">
                   <span className="line-through text-gray-500 text-sm">{course.originalPrice}</span>
                   <span className="text-2xl font-bold text-blue-400">{course.price}</span>
-                  <span className="text-gray-400 text-xs">so'm</span>
                 </div>
               </div>
 
