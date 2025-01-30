@@ -6,10 +6,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: <FaInstagram />, href: "#", label: "Instagram" },
-    { icon: <FaTelegram />, href: "#", label: "Telegram" },
-    { icon: <FaYoutube />, href: "#", label: "YouTube" },
-    { icon: <FaTiktok />, href: "#", label: "TikTok" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/aziz.abdullayev7?igsh=MXg5ZGI1bnRrYXRt", label: "Instagram" },
+    { icon: <FaTelegram />, href: "https://t.me/Trade_InvestUz", label: "Telegram" },
+  
+ 
   ]
 
   const quickLinks = ["Home", "Courses", "About Us", "Contact"]
@@ -49,8 +49,8 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <h4 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">Contact Us</h4>
-            <p className="text-gray-400 mb-2">Email: info@tradingcourses.com</p>
-            <p className="text-gray-400 mb-4">Phone: +1 (123) 456-7890</p>
+
+            <p className="text-gray-400 mb-4">Phone: +998 97 891 11 99</p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <motion.a

@@ -6,7 +6,7 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", href: "#home", icon: Home },
-    { name: "Courses", href: "#courses", icon: BookOpen },
+    { name: "Courses", href: "#CourseTypes", icon: BookOpen },
     { name: "Brokers", href: "#BrokerCards", icon: Users },
     { name: "Contact", href: "#footer", icon: MessageCircle },
     { name: "Telegram", href: "https://t.me/Trade_InvestUz", icon: Send },
@@ -27,6 +27,7 @@ const Header = () => {
     <nav className="fixed top-0 left-0 right-0 bg-gradient-to-b from-gray-900 to-black text-white bg-opacity-90 backdrop-blur-sm shadow-lg z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
+          
           <a
             href="#home"
             className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
@@ -84,4 +85,3 @@ const Header = () => {
 }
 
 export default Header
-
