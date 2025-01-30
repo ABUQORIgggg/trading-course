@@ -37,12 +37,12 @@ const BrokerCards = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <motion.h1
-        className="text-3xl md:text-4xl font-bold text-blue-400 mb-6 md:mb-8 text-center"
+        className="text-3xl md:text-4xl font-bold text-blue-400 mb-6 md:mb-8 text-center "
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Eng Yaxshi Brokerlar Haqida Ma'lumot
+       Men ishlatadigan eng Yaxshi Brokerlar
       </motion.h1>
 
       <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-6">

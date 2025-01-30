@@ -30,6 +30,8 @@ export default function CourseTypes() {
         "Live trade 2soatlik",
         "ICT Strategy 0dan toliq",
       ],
+      buttonText: "Kursga Yozilish",
+      buttonLink: "https://t.me/trade_invest_admin1",
     },
     {
       title: "Offline Kurs",
@@ -46,6 +48,8 @@ export default function CourseTypes() {
         "Offline Live Trade Men bilan birga",
         "Risk Management Master Class",
       ],
+      buttonText: "Kursga Yozilish",
+      buttonLink: "https://t.me/trade_invest_admin1",
     },
     {
       title: "VIP Kanal + Razgon 30x",
@@ -61,6 +65,8 @@ export default function CourseTypes() {
         "Garant 5.000pips - 30.000pips ",
         "Garant qoplanmasa  to'lov qaytariladi",
       ],
+      buttonText: "VIP ga Qo'shilish",
+      buttonLink: "https://t.me/trade_invest_admin1",
     },
   ];
 
@@ -70,7 +76,7 @@ export default function CourseTypes() {
       initial="hidden"
       animate="visible"
     >
-      <div className="container ">
+      <div className="container">
         <motion.h2
           className="text-3xl md:text-4xl font-extrabold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-500 to-blue-600"
           variants={textVariants}
@@ -117,7 +123,7 @@ export default function CourseTypes() {
 
               <div className="p-5 border-t border-gray-700">
                 <motion.a
-                  href="https://t.me/trade_invest_admin1"
+                  href={course.buttonLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-gradient-to-r from-blue-500 to-teal-400 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg text-center block"
@@ -125,7 +131,7 @@ export default function CourseTypes() {
                   whileHover="hover"
                   whileTap="tap"
                 >
-                  Kursga Yozilish
+                  {course.buttonText}
                 </motion.a>
               </div>
             </div>
